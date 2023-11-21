@@ -1,0 +1,45 @@
+.card {
+	height: 280px;
+	padding: 1%;
+}
+
+.card-icon-div {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #dbdbdb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.card-title {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+	letter-spacing: -0.2px;
+}
+
+.card-paragraph {
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: -0.2px;
+	color: #807c7c;
+}
+
+.card-link {
+	text-decoration: none;
+	color: var(--color-quote);
+}
+
+.card-quote {
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 22px;
+	letter-spacing: -0.1px;
+}

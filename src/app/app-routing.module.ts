@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'wireframeOne', component: FirstViewPageComponent },
   { path: 'wireframeTwo', component: SecondViewPageComponent },
   { path: 'wireframeThree', component: ThirdViewPageComponent },
+  { path: '**', redirectTo: '/wireframeOne', pathMatch: 'full' },
 ];
 
 @NgModule({

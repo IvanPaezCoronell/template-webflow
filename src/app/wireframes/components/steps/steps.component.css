@@ -37,3 +37,13 @@
 	line-height: 22px;
 	letter-spacing: -0.2px;
 }
+
+@media (width < 500px) {
+	.step-paragraph {
+		width: 300px;
+	}
+
+  .step {
+    margin-top: 30%;
+  }
+}

@@ -56,3 +56,10 @@ li {
 	gap: 10px;
 	font-size: 13px;
 }
+
+@media (width < 700px) {
+	.footer-links-a-1 {
+		flex-direction: column;
+		gap: 40px;
+	}
+}

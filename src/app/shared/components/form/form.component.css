@@ -70,3 +70,46 @@
 	margin-top: 22px;
 	width: px;
 }
+
+@media (width < 800px) {
+	.header-form {
+		flex-direction: column;
+	}
+
+	.header-second-sub-title {
+		margin-top: 25%;
+	}
+}
+
+@media (width < 500px) {
+	.header-title {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.header-sub-title {
+		width: 300px;
+		font-size: 15px;
+	}
+
+	.header-second-sub-title {
+		margin-top: 35%;
+		width: 300px;
+	}
+}
+
+@media (width < 430px) {
+  .header-title {
+    width: 200px;
+  }
+
+  .header-sub-title {
+    /* width: 10%; */
+    font-size: 15px;
+  }
+
+  .header-second-sub-title {
+    margin-top: 65%;
+    width: 300px;
+  }
+}

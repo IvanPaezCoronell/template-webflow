@@ -2,6 +2,20 @@
   <nav class="navbar-container">
     <img src="../../../assets/logoNavSecond.jpg" alt="" class="logo-nav" />
 
+    <button
+      color="gray"
+      mat-button
+      [matMenuTriggerFor]="menu"
+      class="menu-burger"
+    >
+      <mat-icon class='icon-menu-burger'>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/wireframeOne">First Link</button>
+      <button mat-menu-item routerLink="/wireframeTwo">Second Link</button>
+      <button mat-menu-item routerLink="/wireframeThree">Third Link</button>
+    </mat-menu>
+
     <ul class="ul-container">
       <li class="list-item">
         <a class="nav-link" routerLink="/wireframeOne">First Link</a>

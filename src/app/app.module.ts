@@ -8,6 +8,12 @@ import { FirstViewPageComponent } from './wireframes/pages/first-view-page/first
 import { SecondViewPageComponent } from './wireframes/pages/second-view-page/second-view-page.component';
 import { ThirdViewPageComponent } from './wireframes/pages/third-view-page/third-view-page.component';
 import { WireframesModule } from './wireframes/wireframes.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Material Angular
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -15,11 +21,18 @@ import { WireframesModule } from './wireframes/wireframes.module';
     FirstViewPageComponent,
     SecondViewPageComponent,
     ThirdViewPageComponent,
-    
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, WireframesModule, ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    WireframesModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
-
 })
 export class AppModule {}

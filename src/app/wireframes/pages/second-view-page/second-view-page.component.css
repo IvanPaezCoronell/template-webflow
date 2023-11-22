@@ -21,6 +21,10 @@ a {
 	flex-shrink: 0;
 }
 
+.icon-menu-burger {
+	font-size: 20px !important;
+}
+
 .ul-container {
 	display: flex;
 	gap: 15px;
@@ -292,10 +296,15 @@ a {
 }
 
 @media (width < 670px) {
-	/* TOOD: Agregar la lista a un Menu Hamburguesa */
 	.ul-container {
-	display: none;
-  visibility: hidden;
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media (width > 670px) {
+	.menu-burger {
+		display: none;
 	}
 }
 
@@ -304,9 +313,9 @@ a {
 		width: 70%;
 	}
 
-  .second-section-container {
-    padding: 0px;
-  }
+	.second-section-container {
+		padding: 0px;
+	}
 
 	.first-section-paragraph {
 		font-size: 24px;

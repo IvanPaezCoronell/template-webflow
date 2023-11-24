@@ -1,1 +1,34 @@
-<p>third-view-page works!</p>
+<main class="container">
+  <nav class="navbar">
+    <div class="nav-left-sections">
+      <img src="../../../../assets/Logo.svg" alt="Logo" />
+
+      <ul class="ul-container" *ngFor="let itemMenu of MenuItems">
+        <li class="list-item-navbar">
+          <a href="{{ itemMenu.url }}">{{ itemMenu.title }}</a>
+        </li>
+       
+      </ul>
+    </div>
+
+    <div class="nav-right-sections">
+      <ul class="ul-container">
+        <li class="list-item-navbar"><a href="#">Fifth Link</a></li>
+        <li class="list-item-navbar">
+          <button class="btn-navbar">
+            Button
+            <!-- Button<box-icon
+              name="square-rounded"
+              color="white"
+              class="square-icon"
+            ></box-icon> -->
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header-container">
+    <wireframes-header-third-section></wireframes-header-third-section>
+  </header>
+</main>
